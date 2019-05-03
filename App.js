@@ -1,6 +1,7 @@
 import { Platform } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 import FirstPage from './src/pages/firstPage'
+import { SETTINGS } from "./src/settings";
 
 const createApp = (page) => {
   return page;
@@ -8,7 +9,7 @@ const createApp = (page) => {
 
 
 function registerScreens() {
-  Navigation.registerComponent('page', () => createApp(FirstPage));
+  Navigation.registerComponent(SETTINGS.pageKeys.firstPage, () => createApp(FirstPage));
 };
 
 registerScreens();
@@ -66,7 +67,7 @@ Navigation.events().registerAppLaunchedListener(() => {
             //   })),
             // },
             component: {
-              name: 'page',
+              name: SETTINGS.pageKeys.firstPage,
               options: {
                 topBar,
               },
