@@ -9,6 +9,7 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.5",
+    "react-native-document-scanner": "git+https://github.com/monordo/react-native-document-scanner.git",
     "react-native-localize": "^1.1.2",
     "react-native-navigation": "^2.18.2",
     "typy": "^3.0.2"

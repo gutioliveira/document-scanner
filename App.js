@@ -20,6 +20,7 @@ Navigation.events().registerAppLaunchedListener(() => {
   const topBar = {
     animate: false,
     visible: false,
+    drawBehind: true,
   };
 
   const bottomTabs = {
